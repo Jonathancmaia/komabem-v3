@@ -1,0 +1,15 @@
+#intro{
+    background-image: url("../../assets/bg-intro.jpg");
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    background-image: url('../../assets/logo.png');
+    height: 50vh;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

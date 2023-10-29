@@ -1,0 +1,10 @@
+#announce{
+    background-color: #dacbb7;
+}
+
+#announce > .announce-bg{
+    background-image: url('../../assets/announce-image.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
