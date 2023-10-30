@@ -13,10 +13,10 @@ function App() {
 
   return (
     <Container fluid>
-      <Navbar className="bg-body-tertiary">
+      <Navbar>
         <Container>
 
-          <Nav.Link href="#menu" className="red-button">
+          <Nav.Link href="/menu" className="red-button">
             Cardápio
           </Nav.Link>
 
