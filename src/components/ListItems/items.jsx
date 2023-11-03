@@ -325,9 +325,9 @@ const items = {
         name: "Sopa de Legumes com Carne",
         value: 3200,
       },
-      {
-        separator: "Salgados (12 unidades)",
-      },
+    ],
+
+    "Salgados": [
       {
         id: 148,
         name: "Bolinhos de Aipim com Carne",

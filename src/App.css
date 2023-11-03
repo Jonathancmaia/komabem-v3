@@ -24,3 +24,27 @@
     transform: rotate(45deg);
     z-index: 1;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.text-brown{
+    color: #962f00;
+}
+
+.bg-brown{
+  background-color: #962f00;
+  border-color: #962f00;
+}
+
+.bg-brown:hover {
+  background-color: #772702;
+  border-color: #772702;
+}

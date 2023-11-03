@@ -1,6 +1,6 @@
 import { Container, Nav, Navbar, Row, Col } from 'react-bootstrap';
 import ListItems from './components/ListItems/ListItems';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Menu() {
 
@@ -26,23 +26,24 @@ export default function Menu() {
             </Navbar>
 
             <Row className="bg-dark text-light p-3 d-flex align-items-center">
-                <Col className="fw-bolder fs-3 text-warning text-center" md={6}>
+                <Col role="button" className="fw-bolder fs-3 text-warning text-center" md={6} onClick={() => { setItemsClass(false) }}>
                     Todos os Produtos
                 </Col>
-                <Col className="small text-center p-1 fw-bold" md={2}>
+                <Col role="button" className="small text-center p-1 fw-bold" md={2} onClick={() => { setItemsClass("Linha Individual") }}>
                     Linha Tradicional
                 </Col>
-                <Col className="small text-center p-1 fw-bold" md={2}>
+                <Col role="button" className="small text-center p-1 fw-bold" md={2} onClick={() => { setItemsClass("Linha Tradicional") }}>
                     Tradicional - 2 pessoas
                 </Col>
-                <Col className="small text-center p-1 bg-warning text-danger fw-bolder rounded" md={2}>
+                <Col role="button" className="small text-center p-1 bg-warning text-danger fw-bolder rounded"
+                    onClick={() => { setItemsClass("Linha Premium") }} md={2}>
                     Linha Premium
                 </Col>
             </Row>
 
             <Row>
                 <Col>
-                    <ListItems itemsClass={itemsClass} classType={classType} />
+                    <ListItems key={`${itemsClass}-${classType}`} itemsClass={itemsClass} classType={classType} />
                 </Col>
             </Row>
         </Container >
