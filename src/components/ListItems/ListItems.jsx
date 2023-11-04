@@ -6,7 +6,7 @@ export default function ListItems(props) {
 
     const [filteredItems, setFilteredItems] = useState(items);
     const [quantity, setQuantity] = useState({});
-    const [cart, setCart] = useState([]);
+    const [cart, setCart] = useState(localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : []);
 
     useEffect(() => {
 
@@ -38,6 +38,10 @@ export default function ListItems(props) {
             setFilteredItems(filteredItemsHandler);
         }
     }, [props]);
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }, [cart]);
 
     function StyledCurrency(value) {
         const formattedValue = new Intl.NumberFormat("pt-BR", {
@@ -90,7 +94,6 @@ export default function ListItems(props) {
     const isItemInCart = (itemId) => {
         return cart.some((item) => item.id === itemId);
     };
-
 
     return (
         <Row>
@@ -172,7 +175,7 @@ export default function ListItems(props) {
                                                                                     :
                                                                                     <Button className="bg-brown"
                                                                                         onClick={() => {
-                                                                                            updateCart({ id: i.id, value: i.value, quantity: document.getElementById("qtd" + index).value }, 'add');
+                                                                                            updateCart({ id: i.id, value: i.value, quantity: document.getElementById("qtd" + index).value, name: i.name }, 'add');
                                                                                         }}
                                                                                     >
                                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-bag-check" viewBox="0 0 16 16">
