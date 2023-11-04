@@ -65,6 +65,22 @@ export default function Cart() {
                 setCart([]);
             })
             .catch((err) => setIsLoading({ error: json.message + " " + err }));
+
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11284618922/TcwACJnh3-cYEKq99oQq',
+                'transaction_id': '',
+                'event_callback': callback
+            });
+            return false;
+        }
+
+        gtag_report_conversion();
     }
 
     return (
