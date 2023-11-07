@@ -111,6 +111,15 @@ export default function ListItems(props) {
                                                 {filteredItems[itemClass][type].map((i, index) =>
                                                     <Col key={"item" + index} sm={4} className="my-1 fs-6">
                                                         <Card className="h-100">
+                                                            {i.img ?
+                                                                <Card.Img variant="top" src={i.img} />
+                                                                :
+                                                                <Card.Img variant="top" src={
+                                                                    itemClass === "Linha Premium" ? "src/assets/kit.jpg" :
+                                                                        itemClass === "Linha Tradicional" ? "src/assets/2pessoas.webp" :
+                                                                            itemClass === "Linha Individual" ? "src/assets/individual.webp" : ""
+                                                                } />
+                                                            }
                                                             <Card.Body className="d-flex flex-column">
                                                                 <Card.Title className="h-100">
                                                                     {i.name}
