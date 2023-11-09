@@ -15,6 +15,7 @@
     bottom: -1rem;
     transform: rotate(45deg);
     z-index: 1;
+    /* background-color: ; */
 }
 
 input::-webkit-outer-spin-button,

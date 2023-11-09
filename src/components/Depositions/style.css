@@ -1,0 +1,50 @@
+#depositions{
+  min-height: 400px;
+}
+
+.feedback-balloon{
+  margin-bottom: 40px;
+  padding: 10px 20px;
+}
+
+.feedback-balloon{
+  max-width: 240px;
+  min-height: 120px;
+  border: solid 2px #c6c6c6;
+  border-radius: 40px 40px 40px 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.namefeedback{
+  color: #944420;
+  font-weight: bold;
+}
+
+.carousel{
+  padding: 1rem;
+  width: 100%;
+}
+
+
+/* @media (max-width:500px) {
+  .carousel{
+    width: 300px;
+  }
+} */
+
+/* @media (max-width:500px){
+  .carousel img{
+    width: 125px;
+  }
+}
+
+@media (max-width:400px) {
+  .carousel{
+    width: 250px;
+  }
+} */

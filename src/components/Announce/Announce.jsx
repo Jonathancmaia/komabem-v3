@@ -7,10 +7,10 @@ export default function Announce() {
             <Col className="p-5">
                 <Row>
                     <Col>
-                        <div className="fs-4 fw-bolder">
+                        <div className="fs-2 fw-bolder">
                             COMIDAS MAIS PRÁTICAS E SAUDÁVEIS PARA TORNAR O SEU DIA
                         </div>
-                        <div className="text-danger fs-4 fw-bolder">
+                        <div className="text-danger fs-2 fw-bolder">
                             MAIS PRÁTICO!
                         </div>
                     </Col>

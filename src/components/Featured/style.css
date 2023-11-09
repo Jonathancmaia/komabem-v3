@@ -1,0 +1,39 @@
+#featured{
+  min-height: 680px;
+}
+
+.CardCarousel{
+  width: 480px !important;
+  height: 500px !important;
+  text-align: center;
+}
+
+.carousel{
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.CardBody{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.CardCarousel img{
+  height: 250px;
+  object-fit: cover;
+}
+
+@media (max-width:550px) {
+  .CardCarousel{
+    width: auto !important;
+
+  }
+}
+
+@media (max-width:430px) {
+  .CardCarousel{
+    height: 580px !important;
+  }
+}

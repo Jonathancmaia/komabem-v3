@@ -3,6 +3,8 @@
     height: 80vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    padding-left: 120px;
 }
 
 .logo{
@@ -13,3 +15,21 @@
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+
+@media (max-width:1200px) {
+    #intro{
+        padding-left: 0px;
+    }
+}
+@media (max-width:500px) {
+
+    #intro{
+        height: 65vh;
+    }
+
+    .logo{
+        height: 40vh;
+    }
+}
+

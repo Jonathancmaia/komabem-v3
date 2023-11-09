@@ -14,13 +14,8 @@ export default function Intro() {
                 </Row>
 
                 <Row>
-                    <Col className="px-5 text-light">
-                        <Row className="d-flex h5">
-                            O sabor da tradição em cada prato!
-                        </Row>
-                        <Row className="d-flex h5">
-                            Conheça os nossos congelado a là carte que entregamos diáriamente.
-                        </Row>
+                    <Col className="px-5 text-light text-center h1">
+                         Sabor da Tradição em cada prato! <br></br>Conheça nossos congelados e a là<br></br> cante que oferecemos diariamente.
                     </Col>
                     <Col md="4"></Col>
                 </Row>

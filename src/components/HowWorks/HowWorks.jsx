@@ -77,6 +77,7 @@ export default function HowWorks() {
                         </Row>
                     </Col>
                 </Row>
+                
             </Col>
 
             <div className="bg-danger triangle"></div>
