@@ -10,14 +10,14 @@ export default function Intro() {
                     <Col>
                         <div className="logo"></div>
                     </Col>
-                    <Col md="4"></Col>
+                    <Col lg="3"></Col>
                 </Row>
 
                 <Row>
-                    <Col className="px-5 text-light text-center h1">
-                         Sabor da Tradição em cada prato! <br></br>Conheça nossos congelados e a là<br></br> cante que oferecemos diariamente.
+                    <Col className="px-5 text-light text-center fw-bold fs-2 panel-text">
+                        Sabor da Tradição em cada prato! <br></br>Conheça nossos congelados e a là<br></br> cante que oferecemos diariamente.
                     </Col>
-                    <Col md="4"></Col>
+                    <Col lg="3"></Col>
                 </Row>
             </Col>
         </Row>
