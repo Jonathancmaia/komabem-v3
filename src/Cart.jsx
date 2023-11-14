@@ -56,7 +56,7 @@ export default function Cart() {
             {
                 method: "post",
                 headers: {
-                    'Token': 'E6VProoo2omkOplIV2AuXJJNEcce4TXV'
+                    'Token': 'ilIPrzwrYPdCMpiibPbqvWxHr95fylTY'
                 }
             }
         )
