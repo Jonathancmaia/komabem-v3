@@ -2,12 +2,18 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import NavbarMenu from './components/NavbarMenu/NavbarMenu';
+// ME SALVA JONGAS import { useHistory } from 'react-router-dom';
+
+
 
 export default function Cart() {
 
     const [cart, setCart] = useState(localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : []);
     const [isLoading, setIsLoading] = useState(false);
     const [show, setShow] = useState(true);
+    const [isOrderPlaced, setIsOrderPlaced] = useState(false);
+
+
 
     const {
         register,
@@ -78,7 +84,11 @@ export default function Cart() {
                 'transaction_id': '',
                 'event_callback': callback
             });
+
+            setIsOrderPlaced(true);
+
             return false;
+
         }
 
         gtag_report_conversion();
@@ -244,6 +254,7 @@ export default function Cart() {
                             </Col>
                         </Row>
                     )}
+                
                 </Col>
             </Row>
 
@@ -254,6 +265,12 @@ export default function Cart() {
                     </Button>
                 </Col>
             </Row>
+
+            {isOrderPlaced && (
+            <div className="alert alert-success mt-3" role="alert">
+                 Seu pedido foi enviado com sucesso!
+            </div>
+            )}
         </Container>
     );
 }

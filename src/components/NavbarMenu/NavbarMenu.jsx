@@ -29,7 +29,7 @@ const MyNavbar = () => {
 
         <Navbar.Collapse id="navbar-nav" className="justify-content-end">
           <Nav className="ml-auto">
-            <Nav.Link as={Link} to="/menu" className="text-danger mx-2 fw-bolder d-flex align-items-center">
+            <Nav.Link as={Link} to="/menu" className="mx-2 fw-bolder d-flex align-items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
