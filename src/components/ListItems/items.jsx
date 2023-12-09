@@ -1,7 +1,7 @@
 const items = {
 
   /* Combinados Komabem */
-  "Linha Premium":
+  "Kits Komabem":
   {
     "Aves": [
       {

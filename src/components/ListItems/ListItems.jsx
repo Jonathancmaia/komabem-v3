@@ -1,6 +1,7 @@
 import items from "./items";
 import { Row, Col, Card, Form, Button } from "react-bootstrap";
 import { useState, useEffect } from 'react';
+import "./style.css";
 
 export default function ListItems(props) {
 
@@ -112,13 +113,13 @@ export default function ListItems(props) {
                                                     <Col key={"item" + index} sm={4} className="my-1 fs-6">
                                                         <Card className="h-100">
                                                             {i.img ?
-                                                                <Card.Img variant="top" src={i.img} />
+                                                                <Card.Img variant="top" src={i.img} className="pic" />
                                                                 :
                                                                 <Card.Img variant="top" src={
-                                                                    itemClass === "Linha Premium" ? "src/assets/kit.jpg" :
-                                                                        itemClass === "Linha Tradicional" ? "src/assets/2pessoas.webp" :
-                                                                            itemClass === "Linha Individual" ? "src/assets/individual.webp" : ""
-                                                                } />
+                                                                    itemClass === "Kits Komabem" ? "src/assets/kit.jpg" :
+                                                                        itemClass === "Linha Tradicional" ? "src/assets/2pessoas.jpg" :
+                                                                            itemClass === "Linha Individual" ? "src/assets/individual.jpeg" : ""
+                                                                } className="pic" />
                                                             }
                                                             <Card.Body className="d-flex flex-column">
                                                                 <Card.Title className="h-100">
