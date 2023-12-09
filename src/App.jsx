@@ -7,6 +7,7 @@ import Announce from './components/Announce/Announce';
 import Depositions from './components/Depositions/Depositions';
 import Footer from './components/Footer/Footer';
 import NavbarMenu from './components/NavbarMenu/NavbarMenu';
+import Whatsapp from "./components/Whatsapp/Whatsapp";
 
 function App() {
 
@@ -25,6 +26,8 @@ function App() {
       <Depositions />
 
       <Footer />
+
+      <Whatsapp />
     </Container>
   )
 }
