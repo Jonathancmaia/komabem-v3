@@ -50,11 +50,11 @@ export default function Menu() {
           role="button"
           className="small text-center p-1 bg-warning text-danger fw-bolder rounded"
           onClick={() => {
-            setItemsClass('Kits Komabem')
+            setItemsClass('Combinados Komabem')
           }}
           md={2}
         >
-          Kits Komabem
+          Combinados Komabem
         </Col>
       </Row>
 

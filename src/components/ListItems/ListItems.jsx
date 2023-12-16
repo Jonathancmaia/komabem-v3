@@ -116,7 +116,7 @@ export default function ListItems(props) {
                                                                 <Card.Img variant="top" src={i.img} className="pic" />
                                                                 :
                                                                 <Card.Img variant="top" src={
-                                                                    itemClass === "Kits Komabem" ? "src/assets/kit.jpg" :
+                                                                    itemClass === "Combinados Komabem" ? "src/assets/kit.jpg" :
                                                                         itemClass === "Linha Tradicional" ? "src/assets/2pessoas.jpg" :
                                                                             itemClass === "Linha Individual" ? "src/assets/individual.jpeg" : ""
                                                                 } className="pic" />

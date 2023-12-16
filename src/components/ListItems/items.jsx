@@ -1,7 +1,7 @@
 const items = {
 
   /* Combinados Komabem */
-  "Kits Komabem":
+  "Combinados Komabem":
   {
     "Aves": [
       {
@@ -16,7 +16,7 @@ const items = {
       },
       {
         id: 241,
-        name: "Filé de Frango à Parmegiana com Purê de Batatas",
+        name: "Filé de Frango à Parmegiana com Batatas Coradas",
         value: 2500,
       },
       {
