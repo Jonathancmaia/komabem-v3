@@ -33,7 +33,7 @@ const Whatsapp = () => {
     >
       {isHovered && <div className="help-message">Precisa de ajuda?</div>}
       <a href="https://api.whatsapp.com/send/?phone=5521972770807&text=Ol%C3%A1%2C+venho+atrav%C3%A9s+da+p%C3%A1gina+de+voc%C3%AAs+e+gostaria+de+mais+informa%C3%A7%C3%B5es%21&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-        <img src={whatsapp} alt="WhatsApp" />
+        <img src={whatsapp} alt="WhatsApp" id="whatsapp-button-image" />
       </a>
     </div>
   );
