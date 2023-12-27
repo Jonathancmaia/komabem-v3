@@ -65,7 +65,7 @@ const MyNavbar = () => {
               <span style={{ marginLeft: '0.5rem' }}>Cardápio</span>
             </Nav.Link>
 
-            <Nav.Link as={Link} to="/cart" className="mx-2 fw-bolder d-flex align-items-center">
+            <Nav.Link as={Link} to="/cart" className="mx-2 fw-bolder d-flex align-items-center" id="cart-button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
